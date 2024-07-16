@@ -107,7 +107,7 @@ On PC1 and Laptop1, I configured the default gateway as Wireless Router1’s add
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
 <h3>8. Add cloud</h3>
-a
+Next, I added a Cloud node so that I can configure and test the DNS server on Server1. Wireless Router1 connects to the Cloud and acts as the barrier between the inside and outside network.
 <br />
 <br />
 <img src="https://i.imgur.com/VZ1489I.png"/>
@@ -115,10 +115,11 @@ a
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
 <h3>9. Change index.html file on Server1</h3>
-a
+In the HTTP tab of Server1’s Services page, there is an index.html file that contains information to display when a client connects to Server1’s IP address. By default, generic Cisco information is displayed on the webpage. 
 <br />
 <br />
 <img src="https://i.imgur.com/KmC4j9M.png"/>
+I edited the code so that different information gets displayed. Note that Server1’s IP address, 192.168.1.254, is entered in the URL page on the web browser.
 <br />
 <br />
 <img src="https://i.imgur.com/MvVe77C.png"/>
@@ -126,13 +127,15 @@ a
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
 <h3>10. Configure DNS</h3>
-a
+In the DNS tab of Server1’s Services page, I added an IPv4 A record to translate a test website to Server1’s IP address, 192.168.1.254.
 <br />
 <br />
 <img src="https://i.imgur.com/oeZCwoi.png"/>
+This time, I entered the test website to access Server1’s webpage, indicating that DNS is working properly.
 <br />
 <br />
 <img src="https://i.imgur.com/CH8Q6Fi.png"/>
+For good measure, I also sent a ping to the test website, which was successful.
 <br />
 <br />
 <img src="https://i.imgur.com/oMdwBIo.png"/>
@@ -140,10 +143,11 @@ a
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
 <h3>11. Add router and internet</h3>
-a
+I replaced Wireless Router1 and Cloud with Router1 and an Internet node. Though Router1’s G0/2 address is set to 192.168.2.1/30 in the picture below, I changed it to 10.0.0.1/30 later on to avoid potential confusion while setting up the network.
 <br />
 <br />
 <img src="https://i.imgur.com/bPX2K2F.png"/>
+In the Internet node, I set up two more routers named ISP1 and ISP2. However, these routers are currently just for show. The focus of this project is on the small office side, not the Internet side, so this will suffice for now.
 <br />
 <br />
 <img src="https://i.imgur.com/VLe8Rj5.png"/>
@@ -151,7 +155,13 @@ a
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
 <h3>12. Add distribution switches 1 and 2</h3>
-a
+Now that I’ve set up a basic network with endpoints, a switch, and a router, it’s time to implement the two-tier, collapsed core design. 
+<br />
+<br />
+I added two multilayer switches, DSW1 and DSW2, to act as the distribution layer switches. There are two connections between them for redundancy, and both switches are connected to Router1 for further redundancy.
+<br />
+<br />
+The original layer 2 switch has been renamed to ASW1, an access layer switch, for clarity. In addition, I kept track of all the different interface connections by putting labels on each one. If applicable, I included the IP address of the connection. 
 <br />
 <br />
 <img src="https://i.imgur.com/XuJtZ3I.png"/>
@@ -159,7 +169,10 @@ a
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
 <h3>13. Rename switch to access switch 2 and add phone</h3>
-a
+I renamed ASW1 from earlier to ASW2 simply because I wanted PC1 and the newly added IP phone, Phone1, to be in the middle of the topology.
+<br />
+<br />
+Phone1 is placed between ASW2 and PC1 so that traffic between the two has to go through the phone first. This will be used when I configure IP phones in the next part of the project.
 <br />
 <br />
 <img src="https://i.imgur.com/5HAVnKp.png"/>
@@ -167,7 +180,7 @@ a
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
 <h3>14. Add access switch 1, WLC, and LWAP</h3>
-a
+Next, I added the actual ASW1, and connected a wireless LAN controller, WLC1, and a lightweight access point, LWAP1, to serve as our wireless portion of the office network. Laptop1 has been placed off to the side without it’s ethernet connection. This will be used when I configure wireless networks in the next part of the project.
 <br />
 <br />
 <img src="https://i.imgur.com/eba564c.png"/>
@@ -175,7 +188,7 @@ a
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
 <h3>15. Add access switch 3</h3>
-a
+Finally, I added ASW3 and connected Server1 to it. The access layer is complete, and each of the endpoints are physically separated. In the next part of the project, I’ll be configuring all the VLANs so that they are also logically separated.
 <br />
 <br />
 <img src="https://i.imgur.com/iVW1hEo.png"/>
@@ -183,7 +196,7 @@ a
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
 <h3>16. Add redundancy and clean up</h3>
-a
+To add redundancy between the distribution and access layer, each access switch is connected to each distribution switch. I cleaned up the topology a bit so that it is a little clearer to see which interface is for which connection. 
 <br />
 <br />
 <img src="https://i.imgur.com/eFmb1JO.png"/>
@@ -191,7 +204,7 @@ a
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
 <h3>17. Test connectivity</h3>
-a
+To finish off this part of the project, I double-checked whether connectivity still works in the network. From PC1, I pinged Router1, Server1, and the test website. All were successful, which completes the setup of the small office network!
 <br />
 <br />
 <img src="https://i.imgur.com/bYc2dMY.png"/>
@@ -199,6 +212,10 @@ a
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
 <h3>Onto Part 2</h3>
-a
+This portion of the project was already getting lengthy, so I decided to split the configuration into a part 2, which can be found 
+<a href="https://github.com/rolandsalvador/officenetwork2">here</a>. 
+Please make sure to check it out, because that’s where the fun really starts. I’ll be configuring VLANs, VTP, EtherChannel, HSRP, STP, OSPF, DHCP, SSH, NAT, and much more!
+<br />
+<br />
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
