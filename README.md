@@ -30,7 +30,7 @@ I wanted to put my networking knowledge to the test after obtaining my Cisco Cer
 [6. Add Server1](#6-add-server1)<br />
 [7. Configure default gateway and DNS addresses](#7-configure-default-gateway-and-dns-addresses)<br />
 [8. Add cloud](#8-add-cloud)<br />
-[9. Change index.html file on Server1](#9-change-indexhtml-file-on-server1)<br />
+[9. Change the index.html file on Server1](#9-change-the-indexhtml-file-on-server1)<br />
 [10. Configure DNS](#10-configure-dns)<br />
 [11. Add router and internet](#11-add-router-and-internet)<br />
 [12. Add distribution switches 1 and 2](#12-add-distribution-switches-1-and-2)<br />
@@ -107,14 +107,14 @@ On PC1 and Laptop1, I configured the default gateway as Wireless Router1’s add
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
 <h3>8. Add cloud</h3>
-Next, I added a Cloud node so that I can configure and test the DNS server on Server1. Wireless Router1 connects to the Cloud and acts as the barrier between the inside and outside network.
+Next, I added a Cloud node. Wireless Router1 connects to the Cloud and acts as the barrier between the inside and outside network. The topology is starting to take shape.
 <br />
 <br />
 <img src="https://i.imgur.com/VZ1489I.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
-<h3>9. Change index.html file on Server1</h3>
+<h3>9. Change the index.html file on Server1</h3>
 In the HTTP tab of Server1’s Services page, there is an index.html file that contains information to display when a client connects to Server1’s IP address. By default, generic Cisco information is displayed on the webpage. 
 <br />
 <br />
@@ -180,7 +180,7 @@ Phone1 is placed between ASW2 and PC1 so that traffic between the two has to go 
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
 <h3>14. Add access switch 1, WLC, and LWAP</h3>
-Next, I added the actual ASW1, and connected a wireless LAN controller, WLC1, and a lightweight access point, LWAP1, to serve as our wireless portion of the office network. Laptop1 has been placed off to the side without it’s ethernet connection. This will be used when I configure wireless networks in the next part of the project.
+Next, I added the actual ASW1 and connected a wireless LAN controller, WLC1, and a lightweight access point, LWAP1, to serve as our wireless portion of the office network. Laptop1 has been placed off to the side without it’s ethernet connection. This will be used when I configure wireless networks in the next part of the project.
 <br />
 <br />
 <img src="https://i.imgur.com/eba564c.png"/>
@@ -204,7 +204,7 @@ To add redundancy between the distribution and access layer, each access switch 
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
 <h3>17. Test connectivity</h3>
-To finish off this part of the project, I double-checked whether connectivity still works in the network. From PC1, I pinged Router1, Server1, and the test website. All were successful, which completes the setup of the small office network!
+To finish off part 1 of the project, I double-checked whether connectivity still works in the network. From PC1, I pinged Router1, Server1, and the test website. All were successful, which completes the setup of the small office network!
 <br />
 <br />
 <img src="https://i.imgur.com/bYc2dMY.png"/>
@@ -214,7 +214,7 @@ To finish off this part of the project, I double-checked whether connectivity st
 <h3>Onto Part 2</h3>
 This portion of the project was already getting lengthy, so I decided to split the configuration into a part 2, which can be found 
 <a href="https://github.com/rolandsalvador/officenetwork2">here</a>. 
-Please make sure to check it out, because that’s where the fun really starts. I’ll be configuring VLANs, VTP, EtherChannel, HSRP, STP, OSPF, DHCP, SSH, NAT, and much more!
+Please make sure to check it out, because that’s where the fun really starts. I’ll be configuring VLANs, DHCP, NAT, STP, OSPF, SSH, and much more!
 <br />
 <br />
 
