@@ -24,7 +24,7 @@ I wanted to put my networking knowledge to the test after obtaining my Cisco Cer
 
 [1. Starting out](#1-starting-out)<br />
 [2. Connecting interfaces](#2-connecting-interfaces)<br />
-[3. Configure PC1](#3-configure-pc1)<br />
+[3. Configuring IP addresses](#3-configuring-ip-addresses)<br />
 [4. Ping test](#4-ping-test)<br />
 [5. Add wireless router](#5-add-wireless-router)<br />
 [6. Add Server1](#6-add-server1)<br />
@@ -44,7 +44,7 @@ I wanted to put my networking knowledge to the test after obtaining my Cisco Cer
 <h2>Walkthrough</h2>
 
 <h3>1. Starting out</h3>
-a
+To keep things simple, I started off with a switch, a PC, and a laptop. The network address will be 192.168.1.0 with a subnet mask of 255.255.255.0.
 <br />
 <br />
 <img src="https://i.imgur.com/nBu8aXz.png"/>
@@ -52,15 +52,15 @@ a
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
 <h3>2. Connecting interfaces</h3>
-a
+For now, I connected PC1’s FastEthernet0 (FE0) interface to Switch1’s FastEthernet0/10 (F0/10) interface and Laptop1’s FE0 interface to Switch1’s F0/11 interface. This will change later as the network topology becomes more complex.
 <br />
 <br />
 <img src="https://i.imgur.com/B945CSv.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
-<h3>3. Configure PC1</h3>
-a
+<h3>3. Configuring IP addresses</h3>
+I set PC1’s IP address as 192.168.1.10 and Laptop1’s IP address as 192.168.1.11. I wanted to reserve the first 9 addresses for other devices.
 <br />
 <br />
 <img src="https://i.imgur.com/n1FlG5V.png"/>
@@ -68,10 +68,11 @@ a
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
 <h3>4. Ping test</h3>
-a
+To test if this basic setup was working correctly, I pinged Laptop1 from PC1.
 <br />
 <br />
 <img src="https://i.imgur.com/TtEbpfe.png"/>
+The pings were successful, and we can see the packets traveling in simulation mode.
 <br />
 <br />
 <img src="https://i.imgur.com/l4a02N8.png"/>
@@ -79,7 +80,10 @@ a
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
 <h3>5. Add wireless router</h3>
-a
+I added a wireless router to the network, Wireless Router1. I set its GigabitEthernet (GE1) interface IP address to 192.168.1.1, the first available host address on its subnet. For now, it will also act as the default gateway of the network.
+<br />
+<br />
+I pinged Wireless Router1 from PC1 to check connectivity again, and it worked.
 <br />
 <br />
 <img src="https://i.imgur.com/XQMDeee.png"/>
@@ -87,7 +91,7 @@ a
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
 <h3>6. Add Server1</h3>
-a
+Next, I added a server to the network, Server1. I set its FE0 interface IP address to 192.168.1.254, the last available host address on its subnet. It will act as the DNS server of the network.
 <br />
 <br />
 <img src="https://i.imgur.com/NYsWwai.png"/>
@@ -95,7 +99,7 @@ a
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
 <h3>7. Configure default gateway and DNS addresses</h3>
-a
+On PC1 and Laptop1, I configured the default gateway as Wireless Router1’s address and the DNS server as Server1’s address.
 <br />
 <br />
 <img src="https://i.imgur.com/RGrouRU.png"/>
