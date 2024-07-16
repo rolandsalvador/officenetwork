@@ -41,7 +41,7 @@ a
 a
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/nBu8aXz.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
@@ -49,7 +49,7 @@ a
 a
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/B945CSv.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
@@ -57,7 +57,7 @@ a
 a
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/n1FlG5V.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
@@ -65,10 +65,10 @@ a
 a
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/TtEbpfe.png"/>
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/l4a02N8.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
@@ -76,7 +76,7 @@ a
 a
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/XQMDeee.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
@@ -84,7 +84,7 @@ a
 a
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/NYsWwai.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
@@ -92,7 +92,7 @@ a
 a
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/RGrouRU.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
@@ -100,7 +100,7 @@ a
 a
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/VZ1489I.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
@@ -108,10 +108,10 @@ a
 a
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/KmC4j9M.png"/>
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/MvVe77C.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
@@ -119,13 +119,13 @@ a
 a
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/oeZCwoi.png"/>
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/CH8Q6Fi.png"/>
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/oMdwBIo.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
@@ -133,10 +133,10 @@ a
 a
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/bPX2K2F.png"/>
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/VLe8Rj5.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
@@ -144,7 +144,7 @@ a
 a
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/XuJtZ3I.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
@@ -152,7 +152,7 @@ a
 a
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/5HAVnKp.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
@@ -160,7 +160,7 @@ a
 a
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/eba564c.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
@@ -168,7 +168,7 @@ a
 a
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/iVW1hEo.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
@@ -176,7 +176,7 @@ a
 a
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/eFmb1JO.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
@@ -184,10 +184,11 @@ a
 a
 <br />
 <br />
-<img src=""/>
+<img src="https://i.imgur.com/bYc2dMY.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
 <h3>Onto Part 2</h3>
+a
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
