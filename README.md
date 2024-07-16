@@ -66,6 +66,9 @@ a
 <br />
 <br />
 <img src=""/>
+<br />
+<br />
+<img src=""/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
@@ -106,6 +109,9 @@ a
 <br />
 <br />
 <img src=""/>
+<br />
+<br />
+<img src=""/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
@@ -114,11 +120,20 @@ a
 <br />
 <br />
 <img src=""/>
+<br />
+<br />
+<img src=""/>
+<br />
+<br />
+<img src=""/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
 <h3>11. Add router and internet</h3>
 a
+<br />
+<br />
+<img src=""/>
 <br />
 <br />
 <img src=""/>
