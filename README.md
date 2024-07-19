@@ -34,8 +34,8 @@ I wanted to put my networking knowledge to the test after obtaining my Cisco Cer
 [10. Configure DNS](#10-configure-dns)<br />
 [11. Add router and internet](#11-add-router-and-internet)<br />
 [12. Add distribution switches 1 and 2](#12-add-distribution-switches-1-and-2)<br />
-[13. Rename switch to access switch 2 and add phone](#13-rename-switch-to-access-switch-2-and-add-phone)<br />
-[14. Add access switch 1, WLC, and LWAP](#14-add-access-switch-1-wlc-and-lwap)<br />
+[13. Add WLC and LWAP to access switch 1](#13-add-wlc-and-lwap-to-access-switch-1)<br />
+[14. Add access switch 2 and IP phone](#14-add-access-switch-2-and-ip-phone)<br />
 [15. Add access switch 3](#15-add-access-switch-3)<br />
 [16. Add redundancy and clean up](#16-add-redundancy-and-clean-up)<br />
 [17. Test connectivity](#17-test-connectivity)<br />
@@ -147,7 +147,7 @@ I replaced Wireless Router1 and Cloud with Router1 and an Internet node. Though 
 <br />
 <br />
 <img src="https://i.imgur.com/bPX2K2F.png"/>
-In the Internet node, I set up two more routers named ISP1 and ISP2. However, these routers are currently just for show. The focus of this project is on the small office side, not the Internet side, so this will suffice for now.
+In the Internet node, I set up two more routers named ISP1 and ISP2. However, these routers are currently just for show. The focus of part 1 is on network creation, not connectivity, so this will suffice for now.
 <br />
 <br />
 <img src="https://i.imgur.com/VLe8Rj5.png"/>
@@ -168,19 +168,16 @@ The original layer 2 switch has been renamed to ASW1, an access layer switch, fo
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
 
-<h3>13. Rename switch to access switch 2 and add phone</h3>
-I renamed ASW1 from earlier to ASW2 simply because I wanted PC1 and the newly added IP phone, Phone1, to be in the middle of the topology.
+<h3>13. Add WLC and LWAP to access switch 1</h3>
+Next, I connected a wireless LAN controller (WLC1) and a lightweight access point (LWAP1) to serve as our wireless portion of the office network. Laptop1 has been placed off to the side without it’s ethernet connection. These will be used when I configure wireless networks in the next part of the project.
 <br />
 <br />
-Phone1 is placed between ASW2 and PC1 so that traffic between the two has to go through the phone first. This will be used when I configure IP phones in the next part of the project.
-<br />
-<br />
-<img src="https://i.imgur.com/5HAVnKp.png"/>
+<img src="https://i.imgur.com/xKvOX7k.png"/>
 
 [Back to top](#small-office-network-part-1---created-from-scratch)
   
-<h3>14. Add access switch 1, WLC, and LWAP</h3>
-Next, I added the actual ASW1 and connected a wireless LAN controller, WLC1, and a lightweight access point, LWAP1, to serve as our wireless portion of the office network. Laptop1 has been placed off to the side without it’s ethernet connection. This will be used when I configure wireless networks in the next part of the project.
+<h3>14. Add access switch 2 and IP phone</h3>
+Phone1 is placed between ASW2 and PC1 so that traffic between the two has to go through the phone first. This will be used when I configure IP phones and VLANs in the next part of the project.
 <br />
 <br />
 <img src="https://i.imgur.com/eba564c.png"/>
